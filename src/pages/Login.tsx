@@ -5,6 +5,7 @@ import { useToast } from '@/hooks/use-toast';
 import { authFetch } from '@/lib/authFetch';
 import { API_ENDPOINTS } from '@/config/api';
 import './Login.css';
+import Logo_ubs from "/ubs_logo.png"
 
 export default function Login() {
   const navigate = useNavigate();
@@ -92,7 +93,7 @@ export default function Login() {
       </div>
 
       <div className="login-card">
-        <img className="logo-placeholder" src="/logo.png" alt="Logo" />
+        <img className="logo-placeholder" src={Logo_ubs} alt="Logo" />
         
         <div className="login-header">
           <h3>University of Business and Science<br />Tashkent branch</h3>
